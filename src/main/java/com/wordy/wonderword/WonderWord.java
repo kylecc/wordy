@@ -1,4 +1,4 @@
-package wonderword;
+package com.wordy.wonderword;
 
 import java.util.Arrays;
 import java.util.List;
