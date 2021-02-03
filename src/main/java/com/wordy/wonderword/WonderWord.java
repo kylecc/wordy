@@ -1,6 +1,5 @@
 package com.wordy.wonderword;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
 import java.util.stream.Collectors;
@@ -95,36 +94,4 @@ public class WonderWord {
         return grid;
     }
 
-    private final static List<String> BOARD = Arrays.asList(
-            "SSKTCESNIREKCUS",
-            "STTCCHARTERSRBW",
-            "WMUNOTSMELTPOOH",
-            "HSARIDUSCGOARTC",
-            "IDELGONOANTMOSA",
-            "TNELLEPERASBRLN",
-            "EAENCMOYPTREELO",
-            "FLEIRYONAURPTIE",
-            "ITLTEKCUBWITAGC",
-            "SESLGBAITCVSWRS",
-            "HWLOUKLSKHERUNP",
-            "NOMLASUEESRIIEE",
-            "WSUNSCREENSFSKR",
-            "DAEHLEETSEIAAIC",
-            "CANALSDSRAGLBPH"
-    );
-
-    private final static List<String> WORDS = Arrays.asList(
-            "ANGLER", "BAIT", "BASS", "BOAT", "BUCKET", "BURBOT",
-            "CANALS", "CANOE", "CARP", "CHARTER", "CORK", "CRUISER",
-            "DOCK", "EELS", "FINS", "FIRST", "GARS", "GILLS", "INSECT",
-            "LAKE", "LICENSE", "LINES", "LURED", "MAPS", "NETS", "PERCH",
-            "PICKEREL", "PIKE", "REEL", "REPELLENT", "RIVERS", "SALMON", "SAUGER",
-            "SHORE", "SMALLMOUTH", "SMELT", "STEELHEAD", "STURGEON", "SUCKER", "SUNSCREEN",
-            "TROUT", "WATER", "WAYPOINTS", "WETLANDS", "WHITEFISH", "WORMS", "YELLOW"
-    );
-
-    public static void main(String[] args) {
-        String solution = new WonderWord(BOARD, WORDS).solve();
-        System.out.println("Solution: " + solution);
-    }
 }
